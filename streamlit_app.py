@@ -5,7 +5,7 @@ import pandas as pd
 st.title("Time-Series Analysis of Customer Numbers")
 
 # Load data
-data = pd.read_csv("customer_data.csv")
+data = st.file_uploader('Upload data',type=['xlsx','csv'])
 
 # Create user interface
 st.sidebar.header("Select Time Range")
